@@ -58,7 +58,7 @@ async function analyze (originalUrl, options = {}) {
   } else {
     domain = tldParser(url.origin).domain
   }
-  
+
   const page = await browser.newPage()
   const infos = {
     url: originalUrl,
@@ -131,7 +131,7 @@ async function analyze (originalUrl, options = {}) {
     const html = await page.content()
 
     // Use for detection
-    const context = { originalHtml, html, scripts, page }
+    const context = { originalHtml, html, scripts, page, headers }
 
     if (!(await hasVue(context))) {
       const error = new Error(`Vue is not detected on ${originalUrl}`)
@@ -180,6 +180,10 @@ async function analyze (originalUrl, options = {}) {
         getNuxtMeta(context),
         getNuxtModules(context)
       ])
+      infos.framework.version = await page.evaluate(`window.__unctx__?.get('nuxt-app')?.use()?.versions?.nuxt`)
+      if (!infos.framework.version && infos.vueVersion) {
+        infos.framework.version = infos.vueVersion.split('.')[0]
+      }
       infos.isStatic = meta.static
       infos.hasSSR = meta.ssr
       infos.frameworkModules = modules

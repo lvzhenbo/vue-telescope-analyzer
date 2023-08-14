@@ -2,6 +2,40 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.9.21](https://github.com/nuxtlabs/vue-telescope-analyzer/compare/v0.9.20...v0.9.21) (2023-06-19)
+
+
+### Features
+
+* **modules:** add nuxtlabs-ui ([4e69df4](https://github.com/nuxtlabs/vue-telescope-analyzer/commit/4e69df4e1d7c7ed9b3fdb037a0e19fdf92398385))
+* add nuxt-typo3 for Nuxt3 ([#95](https://github.com/nuxtlabs/vue-telescope-analyzer/issues/95)) ([33b883c](https://github.com/nuxtlabs/vue-telescope-analyzer/commit/33b883ca513ed80d28b08f1530111a3486c43741))
+
+### [0.9.20](https://github.com/nuxtlabs/vue-telescope-analyzer/compare/v0.9.19...v0.9.20) (2023-05-02)
+
+
+### Bug Fixes
+
+* add window ([061d287](https://github.com/nuxtlabs/vue-telescope-analyzer/commit/061d287426d2b23ff429477241271a4b0e770db8))
+
+### [0.9.19](https://github.com/nuxtlabs/vue-telescope-analyzer/compare/v0.9.18...v0.9.19) (2023-04-26)
+
+
+### Features
+
+* add framework version ([89e94ea](https://github.com/nuxtlabs/vue-telescope-analyzer/commit/89e94ea25d72a28dde6c45f17c43a5358ea23378))
+
+### [0.9.18](https://github.com/nuxtlabs/vue-telescope-analyzer/compare/v0.9.17...v0.9.18) (2023-04-13)
+
+
+### Features
+
+* Added detection via http headers ([#93](https://github.com/nuxtlabs/vue-telescope-analyzer/issues/93)) ([ff8ab76](https://github.com/nuxtlabs/vue-telescope-analyzer/commit/ff8ab7670dbe483c3817ee809241ef4a01459d39))
+
+
+### Bug Fixes
+
+* **detectors:** improve nuxt 3 detection ([8c333ca](https://github.com/nuxtlabs/vue-telescope-analyzer/commit/8c333ca62ea9122044d30cf8bb7d4d85f7fca1ca))
+
 ### [0.9.17](https://github.com/nuxtlabs/vue-telescope-analyzer/compare/v0.9.16...v0.9.17) (2022-12-19)
 
 
